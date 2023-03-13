@@ -8,7 +8,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-@ActiveProfiles(profiles = "localtest")
+@ActiveProfiles("test")
 class HelloSpringApplicationTests {
 
     @Test
