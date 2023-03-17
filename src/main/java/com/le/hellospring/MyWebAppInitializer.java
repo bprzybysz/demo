@@ -1,7 +1,7 @@
 package com.le.hellospring;
 
-import com.le.hellospring.customer.CustomerApplication;
 import jakarta.servlet.Filter;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
@@ -14,12 +14,13 @@ public class MyWebAppInitializer extends AbstractAnnotationConfigDispatcherServl
     }
 
     @Override
-    protected Class<?>[] getServletConfigClasses() {
-        return new Class<?>[] { CustomerApplication.class };
+    protected Class<?>[] getServletConfigClasses() { // here
+        return new Class[0];
     }
 
+
     @Override
-    protected String[] getServletMappings() {
+    protected String @NotNull [] getServletMappings() {
         return new String[] { "/" };
     }
 

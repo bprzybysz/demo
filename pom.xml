@@ -69,6 +69,19 @@
             <version>3.1.0-M1</version>
             <scope>test</scope>
         </dependency>
+        <!-- Add MySQL JDBC driver dependency -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.32</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- Add Spring Data JPA dependency -->
     </dependencies>
 
     <parent>
