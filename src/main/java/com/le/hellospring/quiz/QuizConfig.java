@@ -15,6 +15,8 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 
+
+
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = {"com.le.hellospring.quiz"})
@@ -73,3 +75,4 @@ public class QuizConfig {
         return transactionManager;
     }
 }
+
